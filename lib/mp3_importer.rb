@@ -1,5 +1,6 @@
 require_relative "../lib/artist.rb"
 require_relative "../lib/song.rb"
+<<<<<<< HEAD
 require 'pry'
 
 class MP3Importer
@@ -23,4 +24,9 @@ class MP3Importer
       Song.new_by_filename(filename) 
     end
   end
+=======
+
+class MP3Importer
+  
+>>>>>>> fdcc2385dd60d1738e41032a79ae2e7195116d34
 end

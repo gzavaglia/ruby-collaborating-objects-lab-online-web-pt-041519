@@ -3,6 +3,7 @@ require_relative "../lib/mp3_importer.rb"
 
 class Artist
    @@all = []
+<<<<<<< HEAD
    
    attr_accessor :name, :songs 
  
@@ -13,6 +14,16 @@ class Artist
   
   def add_song(song)
     self.songs << song
+=======
+   attr_accessor :name
+ 
+  def initialize(name)
+    @name = name
+  end
+  
+  def add_song(song)
+    @@all << song
+>>>>>>> fdcc2385dd60d1738e41032a79ae2e7195116d34
   end
   
   def self.all
@@ -22,6 +33,7 @@ class Artist
   def save
     @@all << self 
   end
+<<<<<<< HEAD
   
   def self.find_or_create_by_name(name)
     if self.find_by_name(name)
@@ -46,4 +58,6 @@ class Artist
       puts song.name
     end 
   end 
+=======
+>>>>>>> fdcc2385dd60d1738e41032a79ae2e7195116d34
 end
